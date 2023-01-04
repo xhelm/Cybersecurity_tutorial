@@ -43,7 +43,7 @@ def passcheker(test):
 def input_form():
     st.markdown(f'<h1 style="text-align:center; padding 25px">{"Password checker"}</h1>',unsafe_allow_html=True)
     with st.form('input form'):
-        pschk = st.text_input('Pasword')
+        pschk = st.text_input('Enter Pasword', type="password")
         res= st.form_submit_button("Check")
     if pschk =='' and res:
         st.error("Input cannot be empty")
